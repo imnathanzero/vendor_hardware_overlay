@@ -26,5 +26,5 @@ jobs:
     - name: Upload APK
       uses: actions/upload-artifact@v4
       with:
-        path: build/RedmiNote144G*.apk
+        path: build/*.apk
         name: Redmi Note 14 4G Overlays
