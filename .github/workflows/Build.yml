@@ -2,14 +2,16 @@ name: Overlay
 
 on:
   workflow_dispatch:
-
+  watch:
+   types: [started]
+   
 jobs:
   build:
     runs-on: ubuntu-latest
 
     steps:
     - name: Check Out
-      uses: actions/checkout@main
+      uses: actions/checkout@v2
 
     - name: Prepare the environment
       run: |
@@ -27,7 +29,7 @@ jobs:
         bash build.sh
 
     - name: Upload APK
-      uses: actions/upload-artifact@v3.0.0
+      uses: actions/upload-artifact@v4
       with:
         path: build/RedmiNote144G*.apk
         name: Redmi Note 14 4G Overlays
