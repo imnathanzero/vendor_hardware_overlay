@@ -1,8 +1,7 @@
 name: Overlay
 
 on:
-  pull_request:
-    branches: [pie]
+  workflow_dispatch:
 
 jobs:
   build:
@@ -30,5 +29,5 @@ jobs:
     - name: Upload APK
       uses: actions/upload-artifact@v3.0.0
       with:
-        path: build/*.apk
-        name: Overlays
+        path: build/RedmiNote144G*.apk
+        name: Redmi Note 14 4G Overlays
