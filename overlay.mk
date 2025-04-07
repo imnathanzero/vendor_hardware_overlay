@@ -1,3 +1,3 @@
 PRODUCT_PACKAGES += \
-        treble-overlay-xiaomi-redminote144g \
-        treble-overlay-xiaomi-redminote144g-systemui
+        treble-overlay-oppo-OP486C \
+        treble-overlay-oppo-OP486C-systemui

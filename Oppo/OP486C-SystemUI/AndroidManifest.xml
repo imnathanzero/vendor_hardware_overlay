@@ -1,10 +1,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-        package="me.phh.treble.overlay.xiaomi.redminote144g.systemui"
+        package="me.phh.treble.overlay.oppo.OP486C.systemui"
         android:versionCode="1"
         android:versionName="1.0">
         <overlay android:targetPackage="com.android.systemui"
-                android:requiredSystemPropertyName="ro.product.vendor.device"
-                android:requiredSystemPropertyValue="tanzanite"
+                android:requiredSystemPropertyName="ro.product.device"
+                android:requiredSystemPropertyValue="OP486C"
         android:priority="1340"
         android:isStatic="true" />
 </manifest>

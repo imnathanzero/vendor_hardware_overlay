@@ -27,4 +27,4 @@ jobs:
       uses: actions/upload-artifact@v4
       with:
         path: build/*.apk
-        name: Redmi Note 14 4G Overlays
+        name: OPPO A1K OVERLAY GSI
