@@ -3,7 +3,7 @@
         android:versionCode="1"
         android:versionName="1.0">
         <overlay android:targetPackage="android"
-                android:requiredSystemPropertyName="ro.product.device"
+                android:requiredSystemPropertyName="ro.product.system.device"
                 android:requiredSystemPropertyValue="OP486C"
 		android:priority="197"
 		android:isStatic="true" />
