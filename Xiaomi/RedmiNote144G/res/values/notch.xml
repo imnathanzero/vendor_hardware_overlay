@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="rounded_corner_radius">20.0dip</dimen>
-    <dimen name="rounded_corner_content_padding">0.0dip</dimen>
+    <!-- Rounded Cornder -->
+    <dimen name="rounded_corner_radius">108.0px</dimen>
+    <dimen name="rounded_corner_content_padding">54.0px</dimen>
     <dimen name="rounded_corner_radius_adjustment">0.0px</dimen>
-    <dimen name="rounded_corner_radius_bottom">0.0dip</dimen>
+    <dimen name="rounded_corner_radius_bottom">108.0px</dimen>
     <dimen name="rounded_corner_radius_bottom_adjustment">0.0px</dimen>
-    <dimen name="rounded_corner_radius_top">0.0dip</dimen>
+    <dimen name="rounded_corner_radius_top">108.0px</dimen>
     <dimen name="rounded_corner_radius_top_adjustment">0.0px</dimen>
     
+    <!-- Secondary Rounded Corner -->
     <dimen name="secondary_rounded_corner_radius">0.0px</dimen>
     <dimen name="secondary_rounded_corner_radius_adjustment">0.0px</dimen>
     <dimen name="secondary_rounded_corner_radius_bottom">0.0px</dimen>
@@ -15,6 +17,10 @@
     <dimen name="secondary_rounded_corner_radius_top">0.0px</dimen>
     <dimen name="secondary_rounded_corner_radius_top_adjustment">0.0px</dimen>
     
-    <dimen name="status_bar_height_default">45.0dip</dimen>
+    <!-- Status Bar Height -->
+    <dimen name="status_bar_height_default">104.0px</dimen>
     <dimen name="status_bar_height_portrait">@dimen/status_bar_height_default</dimen>
+    <dimen name="new_round_height_bottom">500.0px</dimen>
+    <dimen name="new_round_height_top">500.0px</dimen>
+    
 </resources>
