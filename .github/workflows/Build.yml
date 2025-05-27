@@ -18,10 +18,30 @@ jobs:
         sudo apt -y install git-core git xmlstarlet
         sudo apt update
 
+    - name: Get next version code
+      id: next_ver_code
+      env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      run: |
+          TAG=$(gh release list -L 1 | awk -F '\t' '{print $3}')
+          if [ -z "$TAG" ]; then TAG=0; fi
+          echo "NEXT_VER_CODE=$((TAG + 1))" >> $GITHUB_OUTPUT
+
     - name: Build APK's
       run: |
         cd build
         bash build.sh
+
+    - name: Upload modules to release
+      uses: svenstaro/upload-release-action@v2
+      with:
+          body: ${{ steps.get_output.outputs.BUILD_LOG }}
+          repo_token: ${{ secrets.GITHUB_TOKEN }}
+          file: ./build/*.apk
+          release_name: rn144g
+          tag: ${{ steps.next_ver_code.outputs.NEXT_VER_CODE }}
+          file_glob: true
+          overwrite: true
 
     - name: Upload APK
       uses: actions/upload-artifact@v4
